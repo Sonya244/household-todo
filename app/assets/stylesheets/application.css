@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  font-size: 19px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myUl {
+  flex-direction: column;
+  width: 75%;
+}
+.input-add {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+}
+.input-add #input {
+  flex: 2;
+  border: none;
+}
+.addBtn {
+  border: none;
+  background-color: transparent;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+}
