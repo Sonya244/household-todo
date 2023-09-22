@@ -1,4 +1,6 @@
 class TodosController < ApplicationController
+  skip_forgery_protection
+
   def create
     todo = Todo.create!(todo_params)
 
