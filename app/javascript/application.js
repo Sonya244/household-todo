@@ -18,6 +18,9 @@ function createToDo(str) {
 
     fetch('/todos', {
         method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
         body: json
     })
 }
