@@ -54,12 +54,19 @@ function onBtnClick() {
 
 function displayTasks(tasks) {
   console.log(tasks);
-
   tasks.forEach((task) => {
     const taskLi = document.createElement("li");
-
     taskLi.textContent = task.description;
 
+    const checkButton = document.createElement('button');
+    checkButton.innerHTML = '<i class="fa-solid fa-check"></i>';
+    checkButton.className = 'check-btn';
+
+    const removeButton = document.createElement('button');
+    removeButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    removeButton.className = 'remove-btn';
+
     UnList.append(taskLi);
+    taskLi.append(checkButton, removeButton);
   });
 }

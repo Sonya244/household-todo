@@ -31,7 +31,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 35%;
   height: 50%;
   padding: 1em;
   border: 5px solid lavender;
@@ -50,41 +50,44 @@ body {
   display: flex;
   flex-direction: row;
   justify-items: center;
-  width: 88%;
+  width: 90%;
   padding-left: 45px;
 }
 .input-add #input {
   outline: none;
   width: 100%;
-  border: 2px solid;
+  border: 3px solid;
   border-color: lightblue;
   border-radius: 10px;
 }
 
 li {
-  display: flex;
-  justify-content: space-between;
   list-style: none;
+  width: 90%;
   padding: 10px;
   font-size: 19px;
 }
 li:hover {
   background-color: rgba(192, 192, 192, 0.3);
   border-radius: 5px;
+  transition: 0.3s;
 }
 
 .list {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  overflow:hidden;
+  overflow-y:scroll;
 }
-.list h2 {
+h2 {
   display: flex;
   justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  color: palevioletred;
+  opacity: 80%;
 }
 #myUl {
   flex-direction: column;
-}
+  }
+
 
 .addBtn {
   border: none;
@@ -101,4 +104,19 @@ li:hover {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+}
+
+ .check-btn, .remove-btn{
+  border: none;
+  background-color: white;
+  float: inline-end; 
+  opacity: 86%;
+}
+.check-btn:hover, .remove-btn:hover{
+  background-color:rgba(192, 192, 192, 0.1) ;
+  transition: 0.3s;
+}
+
+[placeholder]{
+  padding-left: 10px;
 }
